@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth Store</title>
+    
+    <!-- daisyUI + tailwind cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar bg-[#15803D] px-4 lg:px-8">
+            <!-- Logo/Brand (Left) -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+                        <li><a href="#about" class="text-gray-700 hover:text-[#15803D]">About</a></li>
+                        <li><a href="#gallery" class="text-gray-700 hover:text-[#15803D]">Gallery</a></li>
+                        <li><a href="#plant-tree" class="text-gray-700 hover:text-[#15803D]">Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-ghost text-xl text-white font-bold hover:bg-transparent">Green Earth</a>
+            </div>
+            
+            <!-- Menu Items (Center) -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-4 text-white">
+                    <li><a href="#about" class="hover:text-yellow-300 transition-colors duration-200">About</a></li>
+                    <li><a href="#gallery" class="hover:text-yellow-300 transition-colors duration-200">Gallery</a></li>
+                    <li><a href="#plant-tree" class="hover:text-yellow-300 transition-colors duration-200">Plant a Tree</a></li>
+                </ul>
+            </div>
+            
+            <!-- Plant a Tree Button (Right) -->
+            <div class="navbar-end">
+                <button class="bg-[#facc15] hover:bg-yellow-300 text-[#15803D] font-semibold px-6 py-2 rounded-full transition-colors duration-200">
+                    Plant a Tree
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+
+</body>
+</html>
