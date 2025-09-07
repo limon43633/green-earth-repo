@@ -31,7 +31,7 @@
   renderCategoryButton({ id: "all", category: "All Trees" }, true);
 
   (data?.categories || []).forEach((c) => {
-    // এখানে category_name ব্যবহার করতে হবে
+    //  category_name 
     renderCategoryButton({ id: c.id, category: c.category_name });
   });
 
