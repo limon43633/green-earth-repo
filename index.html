@@ -87,6 +87,82 @@
     </section>
 
 
+
+    <!-- Choose Your Trees Section -->
+<section id="shop" class="bg-green-50 py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">
+        Choose Your Trees
+      </h2>
+  
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Categories (Left) -->
+        <aside class="lg:col-span-2">
+          <div class="bg-white rounded-xl shadow p-4">
+            <h3 class="font-semibold mb-3">Categories</h3>
+            <div id="category-list" class="space-y-2">
+              <!-- dynamically injected buttons -->
+            </div>
+          </div>
+        </aside>
+  
+        <!-- Cards (Middle) -->
+        <main class="lg:col-span-7">
+          <!-- Spinner -->
+          <div id="loader" class="flex justify-center py-10 hidden">
+            <span class="loading loading-spinner loading-lg"></span>
+          </div>
+  
+          <div id="card-grid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+            <!-- dynamically injected product cards -->
+          </div>
+        </main>
+  
+        <!-- Cart (Right) -->
+        <aside class="lg:col-span-3">
+          <div class="bg-white rounded-xl shadow p-4 sticky top-4">
+            <h3 class="font-semibold mb-3">Your Cart</h3>
+            <ul id="cart-list" class="space-y-2">
+              <!-- cart items -->
+            </ul>
+            <div class="divider my-3"></div>
+            <div class="flex justify-between font-semibold">
+              <span>Total:</span>
+              <span id="cart-total">৳0</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <dialog id="tree-modal" class="modal">
+      <div class="modal-box max-w-2xl">
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <div id="modal-body">
+          <!-- filled by JS -->
+        </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+  </section>
+
+  
+
+      
+
+
+
+
+
+
+
+
+
     <!-- About the campaign section -->
 
     <section class="bg-[#f0fdf4]  py-12 md:py-16 lg:py-20">
@@ -236,8 +312,9 @@
   </footer>
 
 
-
-
+  <!-- index.js link -->
+  
+  <script src="./index.js"></script>  
 
 
 
